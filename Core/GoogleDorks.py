@@ -83,12 +83,12 @@ class GoogleDorks:
             else:
                 return []
         except Exception as e:
-            print(f"⚠️  Error searching Google: {str(e)}")
+            print(f"Warning: Error searching Google: {str(e)}")
             return []
     
     def search(self, query, dork_type="general", date_range=None, num_results=10):
         """Perform Google dork search"""
-        print(f"\n🔍 Google Dorks Search")
+        print(f"\nGoogle Dorks Search")
         print("=" * 50)
         
         dork_query = self.build_dork_query(query, dork_type, date_range)
@@ -99,7 +99,7 @@ class GoogleDorks:
         results = self.search_google(dork_query, num_results)
         
         if results:
-            print(f"✅ Found {len(results)} results")
+            print(f"Found {len(results)} results")
             print()
             print("Top Results:")
             for i, result in enumerate(results[:5], 1):
@@ -108,8 +108,8 @@ class GoogleDorks:
                 if result.get('snippet'):
                     print(f"   {result.get('snippet')[:100]}...")
         else:
-            print("❌ No results found or search blocked")
-            print("⚠️  Note: Google may block automated searches. Consider using Google Custom Search API.")
+            print("No results found or search blocked")
+            print("Note: Google may block automated searches. Consider using Google Custom Search API.")
         
         print("\n" + "=" * 50)
         
@@ -134,7 +134,7 @@ class GoogleDorks:
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report_data, f, indent=2, ensure_ascii=False)
         
-        print(f"💾 Report saved: {report_file}")
+        print(f"Report saved: {report_file}")
         print()
 
 

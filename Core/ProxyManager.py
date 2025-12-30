@@ -68,7 +68,7 @@ class ProxyManager:
         proxy_dict = self.get_proxy_dict()
         if proxy_dict:
             session.proxies.update(proxy_dict)
-            print(f"🔒 Using proxy: {self.proxy_config['type']}://{self.proxy_config['host']}:{self.proxy_config['port']}")
+            print(f"Using proxy: {self.proxy_config['type']}://{self.proxy_config['host']}:{self.proxy_config['port']}")
         return session
 
 

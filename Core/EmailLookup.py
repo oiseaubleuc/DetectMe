@@ -51,18 +51,18 @@ class EmailLookup:
     
     def search(self, email):
         """Search for email across services"""
-        print(f"\n📧 Analyzing email: {email}")
+        print(f"\nAnalyzing email: {email}")
         print("=" * 50)
         
         # Extract username and domain
         if "@" not in email:
-            print("❌ Invalid email address")
+            print("Invalid email address")
             return
         
         username, domain = email.split("@", 1)
         
-        print(f"👤 Username: {username}")
-        print(f"🌐 Domain: {domain}")
+        print(f"Username: {username}")
+        print(f"Domain: {domain}")
         print()
         
         # Check common services (simplified - actual implementation would need
@@ -79,11 +79,11 @@ class EmailLookup:
             results[service_name] = result
             
             if result["exists"] is True:
-                print("✅ Found")
+                print("Found")
             elif result["exists"] is False:
-                print("❌ Not Found")
+                print("Not Found")
             else:
-                print(f"⚠️  {result['status']}")
+                print(f"Warning: {result['status']}")
             
             time.sleep(0.5)
         
@@ -109,7 +109,7 @@ class EmailLookup:
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report_data, f, indent=2, ensure_ascii=False)
         
-        print(f"💾 Report saved: {report_file}")
+        print(f"Report saved: {report_file}")
         print()
 
 

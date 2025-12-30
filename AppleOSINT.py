@@ -27,10 +27,10 @@ def main():
         app = MainApplication()
         app.run()
     except KeyboardInterrupt:
-        print("\n\n⚠️  Application interrupted by user")
+        print("\n\nApplication interrupted by user")
         sys.exit(0)
     except Exception as e:
-        print(f"\n❌ Error: {str(e)}")
+        print(f"\nError: {str(e)}")
         sys.exit(1)
 
 if __name__ == "__main__":

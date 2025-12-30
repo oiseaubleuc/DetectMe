@@ -213,12 +213,12 @@ class MainApplication:
             app = GUIApplication()
             app.run()
         except ImportError as e:
-            print(f"❌ GUI module import failed: {str(e)}")
+            print(f"Error: GUI module import failed: {str(e)}")
             print("   Missing dependencies. Please install requirements:")
             print("   pip3 install -r requirements.txt")
             print("   Or run: ./install.sh")
         except Exception as e:
-            print(f"❌ Error launching GUI: {str(e)}")
+            print(f"Error launching GUI: {str(e)}")
             import traceback
             traceback.print_exc()
 

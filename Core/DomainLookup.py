@@ -123,7 +123,7 @@ class DomainLookup:
     
     def analyze(self, domain):
         """Analyze domain and gather all information"""
-        print(f"\n🌐 Analyzing domain: {domain}")
+        print(f"\nAnalyzing domain: {domain}")
         print("=" * 50)
         
         results = {
@@ -132,20 +132,20 @@ class DomainLookup:
         }
         
         # Get IP address
-        print("📍 Getting IP address...", end=" ", flush=True)
+        print("Getting IP address...", end=" ", flush=True)
         ip = self.get_ip_address(domain)
         results["ip_address"] = ip
         if ip:
-            print(f"✅ {ip}")
+            print(f"{ip}")
         else:
-            print("❌ Not found")
+            print("Not found")
         
         # Get WhoIS information
-        print("📋 Getting WhoIS information...", end=" ", flush=True)
+        print("Getting WhoIS information...", end=" ", flush=True)
         whois_info = self.get_whois_info(domain)
         results["whois"] = whois_info
         if "error" not in whois_info:
-            print("✅ Retrieved")
+            print("Retrieved")
             if whois_info.get("registrar"):
                 print(f"   Registrar: {whois_info.get('registrar')}")
             if whois_info.get("creation_date"):
@@ -153,39 +153,39 @@ class DomainLookup:
             if whois_info.get("expiration_date"):
                 print(f"   Expires: {whois_info.get('expiration_date')}")
         else:
-            print(f"⚠️  {whois_info.get('error')}")
+            print(f"Warning: {whois_info.get('error')}")
         
         # Get DNS records
-        print("🔍 Getting DNS records...", end=" ", flush=True)
+        print("Getting DNS records...", end=" ", flush=True)
         dns_records = self.get_dns_records(domain)
         results["dns"] = dns_records
-        print("✅ Retrieved")
+        print("Retrieved")
         if dns_records.get('A'):
             print(f"   A Records: {', '.join(dns_records['A'])}")
         if dns_records.get('MX'):
             print(f"   MX Records: {', '.join(dns_records['MX'])}")
         
         # Get SSL information
-        print("🔒 Getting SSL certificate information...", end=" ", flush=True)
+        print("Getting SSL certificate information...", end=" ", flush=True)
         ssl_info = self.get_ssl_info(domain)
         results["ssl"] = ssl_info
         if "error" not in ssl_info:
-            print("✅ Retrieved")
+            print("Retrieved")
             if ssl_info.get("notAfter"):
                 print(f"   Valid until: {ssl_info.get('notAfter')}")
         else:
-            print("⚠️  Could not retrieve")
+            print("Warning: Could not retrieve")
         
         # Check subdomains
-        print("🔎 Checking common subdomains...", end=" ", flush=True)
+        print("Checking common subdomains...", end=" ", flush=True)
         subdomains = self.check_subdomain_takeover(domain)
         results["subdomains"] = subdomains
         if subdomains:
-            print(f"✅ Found {len(subdomains)} subdomains")
+            print(f"Found {len(subdomains)} subdomains")
             for sub in subdomains[:5]:  # Show first 5
                 print(f"   • {sub['subdomain']} -> {sub['ip']}")
         else:
-            print("❌ None found")
+            print("None found")
         
         print("\n" + "=" * 50)
         
@@ -201,6 +201,6 @@ class DomainLookup:
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
         
-        print(f"💾 Report saved: {report_file}")
+        print(f"Report saved: {report_file}")
         print()
 

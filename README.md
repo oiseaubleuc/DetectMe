@@ -6,29 +6,29 @@ DetectMe is a comprehensive information gathering tool designed exclusively for 
 
 ---
 
-## ⚠️ Legal Disclaimer & Terms of Use
+## Legal Disclaimer & Terms of Use
 
 ### Intended Use
 
 **DetectMe is designed for legitimate purposes only:**
 
-- ✅ **Security Research**: Vulnerability assessment and penetration testing (with proper authorization)
-- ✅ **Brand Monitoring**: Tracking brand mentions and potential impersonation
-- ✅ **Educational Purposes**: Learning OSINT methodologies and information security
-- ✅ **Self-Learning**: Understanding public data gathering techniques
-- ✅ **Legitimate Investigations**: Authorized security audits and compliance checks
-- ✅ **Threat Intelligence**: Gathering publicly available threat information
+- **Security Research**: Vulnerability assessment and penetration testing (with proper authorization)
+- **Brand Monitoring**: Tracking brand mentions and potential impersonation
+- **Educational Purposes**: Learning OSINT methodologies and information security
+- **Self-Learning**: Understanding public data gathering techniques
+- **Legitimate Investigations**: Authorized security audits and compliance checks
+- **Threat Intelligence**: Gathering publicly available threat information
 
 ### Prohibited Use
 
 **This tool must NOT be used for:**
 
-- ❌ Unauthorized access to systems or data
-- ❌ Harassment, stalking, or doxxing
-- ❌ Privacy violations or unauthorized surveillance
-- ❌ Any activity violating local or international laws
-- ❌ Gathering information without proper authorization
-- ❌ Any malicious or illegal activities
+- **Unauthorized access** to systems or data
+- **Harassment, stalking, or doxxing**
+- **Privacy violations** or unauthorized surveillance
+- **Any activity violating** local or international laws
+- **Gathering information** without proper authorization
+- **Any malicious or illegal** activities
 
 ### User Responsibility
 
@@ -44,7 +44,7 @@ By using DetectMe, you acknowledge and agree that:
 
 ---
 
-## 🍎 Platform Support
+## Platform Support
 
 - **macOS**: Fully supported with native GUI
 - **iOS**: Command-line interface supported
@@ -52,7 +52,7 @@ By using DetectMe, you acknowledge and agree that:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -109,7 +109,7 @@ python3 AppleOSINT.py
 
 ---
 
-## 📋 Core Features
+## Core Features
 
 ### 1. Username Lookup
 Search for usernames across 25+ social media platforms and services:
@@ -186,7 +186,7 @@ Comprehensive report handling:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### API Keys
 
@@ -230,7 +230,7 @@ Customize the interface theme in `GUI/Theme/Mode.json`:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Project Structure
 
@@ -264,7 +264,7 @@ DetectMe/
 
 ---
 
-## 📊 Report Formats
+## Report Formats
 
 All search results are automatically saved in the `Reports/` directory:
 
@@ -280,7 +280,7 @@ Reports include timestamps, detailed results, and location data when available.
 
 ---
 
-## 🔒 Security Features
+## Security Features
 
 - **Report Encryption**: Encode sensitive reports for secure storage
 - **Proxy Support**: Route requests through proxies for anonymity
@@ -289,7 +289,7 @@ Reports include timestamps, detailed results, and location data when available.
 
 ---
 
-## 💼 Professional Use Cases
+## Professional Use Cases
 
 ### Security Teams
 - Vulnerability assessment and penetration testing
@@ -317,7 +317,7 @@ Reports include timestamps, detailed results, and location data when available.
 
 ---
 
-## 🛠️ Technical Requirements
+## Technical Requirements
 
 - **Python**: 3.10 or higher
 - **Operating System**: macOS 10.15+ or iOS
@@ -327,7 +327,7 @@ Reports include timestamps, detailed results, and location data when available.
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Getting Started
 1. Review this README for installation and basic usage
@@ -343,7 +343,7 @@ Reports include timestamps, detailed results, and location data when available.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the security and open-source community. Please ensure:
 
@@ -355,27 +355,27 @@ We welcome contributions from the security and open-source community. Please ens
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **GPL-3.0 License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ⚠️ Final Reminder
+## Final Reminder
 
 **DetectMe is a professional tool designed for legitimate security research, brand monitoring, and educational purposes.**
 
-- ✅ Use responsibly and ethically
-- ✅ Obtain proper authorization before investigations
-- ✅ Respect privacy and comply with all laws
-- ✅ Follow your organization's security policies
-- ❌ Do not use for illegal or unauthorized activities
+- Use responsibly and ethically
+- Obtain proper authorization before investigations
+- Respect privacy and comply with all laws
+- Follow your organization's security policies
+- Do not use for illegal or unauthorized activities
 
 **The developers and contributors are not responsible for misuse of this tool. Users are solely responsible for ensuring their use complies with all applicable laws and regulations.**
 
 ---
 
-## 📞 Support
+## Support
 
 For issues, questions, or contributions:
 - Review the documentation in this README

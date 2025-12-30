@@ -22,7 +22,7 @@ class GraphGenerator:
     
     def create_graph(self, data=None):
         """Create a network graph from data"""
-        print("\n📊 Graph Generator")
+        print("\nGraph Generator")
         print("=" * 50)
         
         if data is None:
@@ -78,9 +78,9 @@ class GraphGenerator:
         plt.savefig(graph_file, dpi=300, bbox_inches='tight')
         plt.close()
         
-        print(f"✅ Graph created: {graph_file}")
-        print(f"📊 Nodes: {G.number_of_nodes()}")
-        print(f"🔗 Edges: {G.number_of_edges()}")
+        print(f"Graph created: {graph_file}")
+        print(f"Nodes: {G.number_of_nodes()}")
+        print(f"Edges: {G.number_of_edges()}")
         print()
 
 
