@@ -1,0 +1,20 @@
+Initial commit: DetectMe OSINT tool for Apple devices
+
+Features:
+- Modern discrete spy-themed GUI with black/green/white color scheme
+- Username lookup across 25+ social media platforms
+- Domain information gathering (WhoIS, DNS, SSL, subdomains)
+- Phone number lookup with precise location mapping
+- Email lookup and service association checking
+- Google dorks search functionality
+- Interactive maps with geolocation markers
+- Information graphs and network visualization
+- Report encoding/decoding for security
+- QR code generation for file transfer
+- Proxy support for anonymous requests
+- Automatic area code detection for location precision
+- IP geolocation services
+- Dark theme with terminal-style interface
+
+Designed exclusively for macOS/iOS devices.
+
