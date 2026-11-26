@@ -1,8 +1,15 @@
-# DetectMe
+<h1 align="center">DetectMe</h1>
+<p align="center">
+  <b>OSINT toolkit for macOS and iOS</b><br/>
+  Gathers publicly available information on usernames, domains, phone numbers and email addresses — for security research, brand monitoring and education.
+</p>
 
-**Professional OSINT (Open Source Intelligence) Tool for Apple Devices**
-
-DetectMe is a comprehensive information gathering tool designed exclusively for macOS and iOS devices. It enables security professionals, researchers, and organizations to gather publicly available information about domains, usernames, phone numbers, and email addresses for legitimate security research, brand monitoring, and educational purposes.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/OSINT-toolkit-222?style=flat-square" />
+  <img src="https://img.shields.io/badge/macOS-iOS-000000?style=flat-square&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/GUI-CLI-555?style=flat-square" />
+</p>
 
 ---
 
@@ -388,3 +395,7 @@ For issues, questions, or contributions:
 **DetectMe - Professional OSINT Tool for Apple Devices**
 
 *Built for security professionals, researchers, and organizations committed to ethical information gathering.*
+
+---
+
+<p align="center">Built by <a href="https://github.com/oiseaubleuc">Hoho</a> · Belgium</p>
